@@ -1,0 +1,1245 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>S&amp;H Safety Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  color-scheme:dark;
+  /* Field-manual palette: warm near-black, bone text, hi-vis amber signal */
+  --bg:#15120D; --bg-2:#1B1711; --surface:#201B14;
+  --ink:#F1EBDD; --ink-2:#CBC3B2; --muted:#908878; --line:#332D23;
+  --green:#FFB42E; --green-btn:#FFB42E; --green-ink:#17120A; --green-soft:#2A2012; --green-text:#E8A638;
+  --forest:#0E0B07; --forest-deep:#080603;
+  --coral:#FF6A3C; --coral-hover:#FF845C; --coral-ink:#17120A; --coral-text:#FF8A5E;
+  --lav:#9A9182; --lav-soft:#241E15; --lav-text:#B6AC9A;
+  --band:#1B1711; --band-2:#201B14; --band-text:#F1EBDD; --band-muted:#B6AC9A; --band-green:#FFB42E;
+  --foot:#0C0905; --foot-text:#EEE8DA; --foot-muted:#938A7A; --foot-green:#FFB42E;
+  --ph:#1B1711; --ph-line:#3A3326;
+  --yellow:var(--green);
+  --stripe:repeating-linear-gradient(-45deg,var(--yellow) 0 13px,#17120A 13px 26px);
+  --display:"Sofia Sans","Segoe UI",Arial,sans-serif;
+  --body:"Sofia Sans","Segoe UI",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.12;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:24px}
+@media (max-width:600px){.wrap{padding-inline:16px}}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.top::before{content:"";display:block;height:5px;background:var(--stripe);background-size:39.598px 39.598px;animation:tape 2.4s linear infinite}
+@keyframes tape{to{background-position:39.598px 0}}
+.top .wrap{display:flex;align-items:center;gap:24px;min-height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+@media (max-width:480px){.top .brand-name small{display:none}.top .wrap{gap:12px}}
+.mark{width:42px;height:42px;background:var(--forest);color:#fff;box-shadow:inset 0 -5px 0 var(--yellow);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:15px;letter-spacing:.02em;border-radius:3px}
+.brand-name{font-family:var(--display);font-weight:800;font-size:17px;line-height:1.05}
+.brand-name small{display:block;font-family:var(--body);font-weight:600;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.nav{display:flex;gap:4px;margin-left:auto;align-items:center}
+.nav a{text-decoration:none;font-weight:600;font-size:15px;padding:8px 12px;border-radius:3px;color:var(--ink-2)}
+.nav a:hover{color:var(--ink);background:var(--bg-2)}
+.nav a[aria-current="page"]{color:var(--green-text);box-shadow:inset 0 -2px 0 var(--green)}
+.nav a.cta-link{background:var(--coral);color:var(--coral-ink);margin-left:8px;box-shadow:none}
+.nav a.cta-link:hover{background:var(--coral-hover);color:var(--coral-ink)}
+.menu-btn{display:none;margin-left:auto;background:none;border:1px solid var(--line);color:var(--ink);font:600 15px var(--body);padding:8px 14px;border-radius:3px;cursor:pointer}
+@media (max-width:980px){
+  .menu-btn{display:block}
+  .nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:8px 16px 16px;gap:2px}
+  .nav.open{display:flex}
+  .nav a{padding:12px}
+  .nav a.cta-link{margin:8px 0 0;text-align:center}
+}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 16px var(--body);text-decoration:none;padding:14px 22px;border-radius:3px;border:2px solid transparent;cursor:pointer}
+.btn-green{background:var(--green-btn);color:var(--green-ink)}
+.btn-green:hover{background:var(--coral-hover)}
+.btn-coral{background:var(--coral);color:var(--coral-ink)}
+.btn-coral:hover{background:var(--coral-hover)}
+.btn-ghost{border-color:currentColor}
+.btn-ghost{color:var(--ink)}
+.btn-ghost:hover{background:var(--green-soft)}
+.arrow::after{content:"→";font-weight:700}
+
+/* pages */
+[data-page]{display:none}
+[data-page].active{display:block}
+section{padding-block:88px}
+@media (max-width:700px){section{padding-block:60px}}
+.alt{background:var(--bg-2)}
+.band{background:var(--band);color:var(--band-text)}
+.eyebrow{font:600 13px var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--green-text);margin-bottom:14px;display:block}
+.band .eyebrow{color:var(--band-green)}
+.h-xl{font-size:clamp(38px,5.6vw,68px);font-weight:800;letter-spacing:-.025em}
+.h-l{font-size:clamp(30px,3.6vw,44px);font-weight:800;letter-spacing:-.02em}
+.h-m{font-size:24px;font-weight:700}
+.lead{font-size:20px;color:var(--ink-2);max-width:62ch}
+.band .lead{color:var(--band-muted)}
+.prose{max-width:66ch;display:grid;gap:16px;color:var(--ink-2)}
+.sec-head{display:grid;gap:16px;margin-bottom:48px;max-width:760px}
+
+/* hero */
+.hero{background:var(--bg);border-bottom:1px solid var(--line);color:var(--band-text);padding-block:0;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:end;padding-block:96px 0}
+.hero-copy{padding-bottom:96px;display:grid;gap:28px}
+.hero h1 span{color:var(--ink);background:linear-gradient(transparent 66%,var(--green) 66%, var(--green) 90%,transparent 90%) no-repeat 0 0/100% 100%;-webkit-box-decoration-break:clone;box-decoration-break:clone;animation:marker .9s cubic-bezier(.6,.1,.2,1) .45s both}
+@keyframes marker{from{background-size:0% 100%}to{background-size:100% 100%}}
+.hero .lead{color:var(--band-muted)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px}
+.hero-sign{align-self:end;border:2px solid var(--band-text);border-bottom:0;background:var(--band-2);transform-origin:50% 0;animation:swing 1.3s cubic-bezier(.3,.7,.3,1) .2s both;position:relative;z-index:2}
+@keyframes swing{0%{transform:translateY(-70px) rotate(-7deg);opacity:0}35%{opacity:1;transform:translateY(0) rotate(4deg)}55%{transform:rotate(-2.2deg)}72%{transform:rotate(1.1deg)}86%{transform:rotate(-.4deg)}100%{transform:none}}
+.sign-body li::before{animation:pop .35s cubic-bezier(.3,1.6,.5,1) both}
+.sign-body li:nth-child(1)::before{animation-delay:1.25s}
+.sign-body li:nth-child(2)::before{animation-delay:1.45s}
+.sign-body li:nth-child(3)::before{animation-delay:1.65s}
+@keyframes pop{from{transform:translateY(-2px) scale(0)}to{transform:translateY(-2px) scale(1)}}
+.pin{position:absolute;top:-14px;width:116px;height:30px;z-index:3;background:var(--stripe);background-size:39.598px 39.598px;box-shadow:0 4px 10px -4px rgba(0,0,0,.45);opacity:.96;animation:stick .4s cubic-bezier(.3,1.5,.5,1) both}
+.pin::before,.pin::after{content:"";position:absolute;top:0;bottom:0;width:6px;background:inherit;background-size:inherit}
+.pin.l{left:-38px;transform:rotate(-38deg);--r:-38deg;animation-delay:1.55s;-webkit-mask:linear-gradient(90deg,transparent 0 3px,#000 3px calc(100% - 3px),transparent 0)}
+.pin.r{right:-38px;transform:rotate(38deg);--r:38deg;animation-delay:1.75s;-webkit-mask:linear-gradient(90deg,transparent 0 3px,#000 3px calc(100% - 3px),transparent 0)}
+@keyframes stick{from{opacity:0;transform:rotate(var(--r)) scale(1.35) translateY(-8px)}to{opacity:.96;transform:rotate(var(--r)) scale(1)}}
+@media (max-width:900px){.pin{width:96px;height:26px}.pin.l{left:-22px}.pin.r{right:-22px}}
+.hero-sign .sign-head{background:var(--green-btn);color:var(--green-ink);font:800 22px var(--display);letter-spacing:.08em;text-transform:uppercase;padding:14px 22px;display:flex;justify-content:space-between;align-items:center}
+.sign-head svg{width:30px;height:30px}
+.hero-sign .sign-body{padding:28px 22px 36px;display:grid;gap:14px}
+.sign-body .kicker{color:var(--band-muted);font-size:15px}
+.sign-body ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.sign-body li{font:800 24px var(--display);letter-spacing:-.01em;display:flex;gap:12px;align-items:baseline}
+.sign-body li::before{content:"";width:12px;height:12px;background:var(--coral);flex-shrink:0;transform:translateY(-2px)}
+.hero-strip{border-top:1px solid var(--line);background:var(--forest)}
+.hero-strip .stat{border-color:#545457!important}
+.hero-strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-block:0;align-items:start;gap:0}
+.stat{padding:26px 20px 26px 0;border-right:1px solid var(--line);padding-left:20px}
+.stat:first-child{padding-left:0}
+.stat:last-child{border-right:0}
+.stat b{display:block;font:800 34px var(--display);color:#fff;font-variant-numeric:tabular-nums}
+.stat span{color:var(--foot-muted);font-size:14.5px;line-height:1.35;display:block;margin-top:4px}
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;gap:0;padding-top:64px}
+  .hero-copy{padding-bottom:48px}
+  .hero-strip .wrap{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(3){padding-left:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+}
+
+/* page hero (inner) */
+.phero{background:var(--bg);border-bottom:1px solid var(--line);color:var(--band-text);padding-block:72px 64px}
+.phero .wrap{display:grid;gap:18px}
+.phero .lead{color:var(--band-muted)}
+.crumb{font:500 13px var(--mono);color:var(--lav-text);letter-spacing:.04em}
+.crumb a{color:var(--green-text);text-decoration:none}
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+@media (max-width:860px){.split{grid-template-columns:1fr;gap:36px}}
+
+/* checklist */
+.checks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px}
+.checks li{display:flex;gap:12px;align-items:flex-start;color:var(--ink-2);line-height:1.4}
+.checks li::before{content:"";flex-shrink:0;width:18px;height:18px;margin-top:2px;border-radius:2px;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.5l3 3 6-7' fill='none' stroke='%232C2C2E' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.checks.one{grid-template-columns:1fr}
+.band .checks li{color:var(--band-text)}
+@media (max-width:560px){.checks{grid-template-columns:1fr}}
+
+/* service grid (home) */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.svc-tile{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 24px;text-decoration:none;display:grid;gap:8px;align-content:start;background:var(--surface);transition:background .15s;position:relative;overflow:hidden}
+.svc-tile::before{content:"";position:absolute;top:0;bottom:0;left:0;width:3px;background:var(--yellow);box-shadow:0 0 14px 4px rgba(245,197,24,.55),-40px 0 60px 10px rgba(245,197,24,.18);left:-30px;opacity:0;pointer-events:none}
+.svc-tile:hover::before,.svc-tile:focus-visible::before{animation:scan .75s cubic-bezier(.5,0,.3,1) both}
+@keyframes scan{0%{left:-30px;opacity:1}90%{opacity:1}100%{left:calc(100% + 30px);opacity:0}}
+.svc-tile:hover{background:var(--green-soft)}
+.svc-tile h3{font-size:19px;font-weight:700;display:flex;justify-content:space-between;gap:12px}
+.svc-tile h3::after{content:"→";color:var(--coral-text);transition:transform .15s}
+.svc-tile:hover h3::after{transform:translateX(4px)}
+.svc-tile p{color:var(--muted);font-size:15.5px;line-height:1.45}
+@media (max-width:900px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.svc-grid{grid-template-columns:1fr}}
+
+/* approach */
+.steps{display:grid;grid-template-columns:repeat(7,1fr);gap:0;counter-reset:s;border-top:3px solid var(--green)}
+.step{padding:22px 16px 0 0;counter-increment:s;display:grid;gap:8px;align-content:start}
+.step::before{content:counter(s,decimal-leading-zero);font:500 13px var(--mono);color:var(--coral-text)}
+.step h3{font-size:20px;font-weight:800}
+.step p{font-size:15px;color:var(--muted);line-height:1.45}
+.band .step p{color:var(--band-muted)}
+.band .step::before{color:var(--coral-text)}
+.band .steps{border-top-color:var(--band-green)}
+@media (max-width:1000px){.steps{grid-template-columns:repeat(2,1fr);border-top:0;gap:0 24px}.step{border-top:3px solid var(--green);padding-bottom:26px}.band .step{border-top-color:var(--band-green)}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* why list */
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:36px 32px}
+.why div{display:grid;gap:8px;align-content:start;padding-top:18px;border-top:3px solid var(--green)}
+.why h3{font-size:18px;font-weight:700}
+.why p{color:var(--muted);font-size:15.5px;line-height:1.5}
+@media (max-width:960px){.why{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.why{grid-template-columns:1fr}}
+
+/* quote block (founder teaser) */
+.quote{display:grid;grid-template-columns:220px 1fr;gap:48px;align-items:center}
+.quote blockquote{margin:0;font:700 clamp(24px,2.8vw,34px)/1.25 var(--display);letter-spacing:-.015em}
+.quote blockquote::before{content:"“";display:block;font-size:72px;line-height:.6;color:var(--coral);margin-bottom:14px}
+.quote cite{display:block;font-style:normal;margin-top:18px;font:600 15px var(--body);color:var(--muted)}
+@media (max-width:760px){.quote{grid-template-columns:1fr;gap:28px}.quote .ph{max-width:220px}}
+
+/* photo placeholder */
+.ph{aspect-ratio:4/5;max-width:100%;background:var(--ph);border:1.5px dashed var(--ph-line);display:grid;place-items:center;text-align:center;padding:16px;color:var(--muted);border-radius:3px}
+.ph b{display:block;font:800 44px var(--display);color:var(--lav-text);letter-spacing:-.02em}
+.ph span{color:var(--lav-text);font:500 12px var(--mono);letter-spacing:.04em}
+.ph.wide{aspect-ratio:16/10}
+
+/* CTA band */
+.cta-band{background:var(--forest);color:#fff;padding-block:64px;position:relative}
+.cta-band::before{content:"";position:absolute;left:0;right:0;top:0;height:8px;background:var(--stripe);background-size:39.598px 39.598px;animation:tape 2.4s linear infinite reverse}
+.cta-band h2{color:#fff}
+.cta-band .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+.cta-band h2{font-size:clamp(28px,3.4vw,40px);font-weight:800;max-width:22ch}
+.cta-band p{color:var(--foot-muted);margin-top:10px;max-width:56ch}
+.cta-band .btn{background:var(--coral);color:var(--coral-ink)}
+.cta-band .btn:hover{background:var(--coral-hover)}
+
+/* services page */
+.svc-layout{display:grid;grid-template-columns:260px 1fr;gap:56px;align-items:start}
+.svc-index{position:sticky;top:calc(env(safe-area-inset-top,0px) + 96px);display:grid;gap:2px;max-height:calc(100vh - 120px);overflow:auto;padding-right:6px}
+.svc-index .lbl{font:600 12px var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:18px 0 6px}
+.svc-index .lbl:first-child{margin-top:0}
+.svc-index button{all:unset;cursor:pointer;font-size:15px;font-weight:500;color:var(--ink-2);padding:6px 10px;border-left:2px solid var(--line);line-height:1.3}
+.svc-index button:hover{color:var(--ink);border-left-color:var(--coral)}
+.svc-index button:focus-visible{outline:2px solid var(--green)}
+.svc-list{display:grid;gap:0}
+.svc{padding-block:48px;border-top:1px solid var(--line);scroll-margin-top:96px;display:grid;gap:18px}
+.svc:first-child{border-top:0;padding-top:0}
+.svc .tag{font:500 12.5px var(--mono);color:var(--lav-text);letter-spacing:.06em;text-transform:uppercase}
+.svc h2{font-size:clamp(26px,2.8vw,34px);font-weight:800}
+.svc .sub{font:600 19px var(--display);color:var(--ink-2)}
+.svc .body{display:grid;gap:12px;color:var(--ink-2);max-width:66ch}
+.svc .list-lbl{font:700 14px var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin-top:6px}
+.svc .note{background:var(--green-soft);border-radius:3px;padding:16px 18px;color:var(--ink);font-size:16px;max-width:66ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{border:1px solid var(--line);background:var(--surface);padding:6px 12px;border-radius:3px;font-size:15px;color:var(--ink-2);line-height:1.3}
+.chips span small{font:500 11.5px var(--mono);color:var(--lav-text);background:var(--lav-soft);padding:1px 5px;border-radius:2px;margin-left:6px}
+.progression{display:flex;align-items:stretch;gap:0;flex-wrap:wrap;max-width:760px}
+.progression div{flex:1 1 180px;padding:16px 18px;border:1px solid var(--line);font:700 17px var(--display);position:relative;background:var(--surface)}
+.progression div small{display:block;font:500 12px var(--mono);color:var(--muted);margin-bottom:4px}
+.progression div:first-child{border-top:3px solid var(--coral)}
+.progression div:last-child{background:var(--green-btn);color:var(--green-ink);border-color:var(--green-btn)}
+.progression div:last-child small{color:inherit;opacity:.8}
+@media (max-width:860px){.svc-layout{grid-template-columns:1fr}.svc-index{position:static;max-height:none;grid-template-columns:1fr 1fr;display:grid}.svc-index .lbl{grid-column:1/-1}}
+@media (max-width:480px){.svc-index{grid-template-columns:1fr}}
+
+/* training */
+.lang{justify-self:start;display:inline-flex;gap:0;border:1.5px solid var(--forest);border-radius:3px;overflow:hidden;font:700 14px var(--body);letter-spacing:.08em;text-transform:uppercase}
+.lang span{padding:8px 14px}
+.lang span:first-child{background:var(--forest);color:#fff}
+.tr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.tr-card{background:var(--surface);padding:28px 26px;display:grid;gap:14px;align-content:start}
+.tr-card h3{font-size:19px;font-weight:700}
+.tr-card ul{margin:0;padding:0;list-style:none;display:grid;gap:6px}
+.tr-card li{color:var(--ink-2);font-size:15.5px;padding-left:16px;position:relative;line-height:1.4}
+.tr-card li::before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;background:var(--coral)}
+.tr-card.custom{background:var(--green-soft)}
+@media (max-width:900px){.tr-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.tr-grid{grid-template-columns:1fr}}
+
+/* industries */
+.ind-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 56px}
+.ind{display:grid;grid-template-columns:48px 1fr;gap:18px;padding-block:28px;border-top:1px solid var(--line)}
+.ind .ico{width:48px;height:48px;border-radius:3px;background:var(--green-soft);color:var(--green-text);display:grid;place-items:center}
+.ind .ico svg{width:26px;height:26px}
+.ind h3{font-size:21px;font-weight:700;margin-bottom:6px}
+.ind p{color:var(--muted);font-size:16px;line-height:1.5}
+@media (max-width:760px){.ind-grid{grid-template-columns:1fr}}
+
+/* founder */
+.founder{display:grid;grid-template-columns:320px 1fr;gap:64px;align-items:start}
+.founder aside{position:sticky;top:110px;display:grid;gap:20px}
+.creds{display:grid;gap:10px}
+.creds div{padding:12px 14px;border:1px solid var(--line);border-radius:3px;font-weight:600;font-size:15px;line-height:1.35;background:var(--surface)}
+.creds div small{display:block;font:500 11.5px var(--mono);color:var(--lav-text);letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px}
+.figs{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-block:8px}
+.figs div{padding:20px 16px 20px 0}
+.figs b{display:block;font:800 32px var(--display);color:var(--green-text);font-variant-numeric:tabular-nums}
+.figs span{font-size:14px;color:var(--muted);line-height:1.35;display:block}
+@media (max-width:900px){.founder{grid-template-columns:1fr;gap:36px}.founder aside{position:static;grid-template-columns:200px 1fr;align-items:start}.figs{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.founder aside{grid-template-columns:1fr}.founder aside .ph{max-width:220px}}
+
+/* contact */
+.contact-card{border:1px solid var(--line);background:var(--surface);border-radius:3px}
+.contact-card .row{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:18px 22px;border-top:1px solid var(--line);align-items:center}
+.contact-card .row:first-child{border-top:0}
+.contact-card .k{font:600 12.5px var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.fill{border:1.5px dashed var(--ph-line);background:var(--ph);padding:6px 10px;border-radius:3px;color:var(--lav-text);font:500 14px var(--mono)}
+.contact-card .v{font-weight:600}
+.contact-card .head{background:var(--foot);color:var(--foot-text);padding:22px;border-radius:3px 3px 0 0}
+.contact-card .head h3{font-size:22px;font-weight:800}
+.contact-card .head p{color:var(--foot-muted);font-size:15px;margin-top:4px}
+@media (max-width:480px){.contact-card .row{grid-template-columns:1fr;gap:6px}}
+
+/* philosophy */
+.phil{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+.phil>div{display:grid;gap:14px;align-content:start}
+.phil h3{font-size:22px;font-weight:800}
+.phil p{color:var(--ink-2)}
+@media (max-width:900px){.phil{grid-template-columns:1fr;gap:36px}}
+
+/* footer */
+footer{background:var(--foot);color:var(--foot-muted);padding-block:64px 40px;font-size:15px}
+footer .wrap{display:grid;gap:40px}
+.foot-top{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+.foot-top h4{font:700 13px var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--foot-text);margin-bottom:14px}
+.foot-top a{display:block;text-decoration:none;padding:3px 0}
+.foot-top a:hover{color:var(--foot-text)}
+.foot-tag{font:800 22px/1.25 var(--display);color:var(--foot-text);max-width:22ch;margin-top:18px}
+.foot-tag span{color:var(--foot-green)}
+.foot-base{border-top:1px solid #48484B;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:14px}
+footer .brand-name{color:var(--foot-text)}
+footer .brand-name small{color:var(--foot-muted)}
+@media (max-width:760px){.foot-top{grid-template-columns:1fr 1fr}.foot-top>div:first-child{grid-column:1/-1}}
+
+
+/* --- layout variety --- */
+section.roomy{padding-block:112px}
+@media (max-width:700px){section.roomy{padding-block:72px}}
+.dark{background:var(--forest);color:var(--foot-text)}
+.dark .eyebrow{color:var(--yellow)}
+.dark .h-l{color:#fff}
+.dark .steps,.dark .step{border-top-color:var(--yellow)}
+.dark .step::before{color:var(--yellow)}
+.dark .step p{color:var(--foot-muted)}
+.svc-groups{display:grid;grid-template-columns:1fr 1fr;gap:48px 64px}
+.svc-group h3{font:700 13px var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--green-text);padding-bottom:12px;border-bottom:2px solid var(--ink)}
+.svc-group ul{list-style:none;margin:0;padding:0}
+.svc-row{position:relative;overflow:hidden;display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:16px 4px;border-bottom:1px solid var(--line);text-decoration:none;min-height:44px;transition:background .15s}
+.svc-row span{font:700 18px var(--display)}
+.svc-row small{grid-column:1;color:var(--muted);font-size:15px}
+.svc-row::after{content:"→";grid-row:1/3;grid-column:2;align-self:center;color:var(--green-text);font-weight:700;transition:transform .15s}
+.svc-row:hover{background:var(--green-soft)}
+.svc-row:hover::after{transform:translateX(4px)}
+.svc-row::before{content:"";position:absolute;top:0;bottom:0;left:-30px;width:3px;background:var(--yellow);box-shadow:0 0 14px 4px rgba(245,197,24,.55);opacity:0;pointer-events:none}
+.svc-row:hover::before,.svc-row:focus-visible::before{animation:scan .7s cubic-bezier(.5,0,.3,1) both}
+@media (max-width:820px){.svc-groups{grid-template-columns:1fr}}
+.rows{display:grid}
+.row-item{display:grid;grid-template-columns:minmax(160px,.8fr) 1.2fr;gap:8px 28px;padding:20px 0;border-top:1px solid var(--line)}
+.row-item:first-child{border-top:0;padding-top:0}
+.row-item h3{font-size:18px;font-weight:700}
+.row-item p{color:var(--ink-2)}
+@media (max-width:560px){.row-item{grid-template-columns:1fr}}
+@media (max-width:860px){.split .h-l[style*="sticky"]{position:static!important}}
+.pull{padding-block:96px}
+.pull blockquote{margin:0;max-width:28ch;font:800 clamp(30px,4vw,52px)/1.12 var(--display);letter-spacing:-.025em;color:var(--ink)}
+.pull blockquote::before{content:"“";color:var(--yellow);margin-right:.05em}
+.pull-by{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px 32px;align-items:center;color:var(--muted);font-size:15px}
+.text-link{font-weight:700;color:var(--ink);text-decoration:underline;text-decoration-color:var(--yellow);text-decoration-thickness:3px;text-underline-offset:5px;padding-block:10px}
+.text-link:hover{text-decoration-color:var(--ink)}
+.phil.rows-3{grid-template-columns:1fr;gap:0}
+.phil.rows-3>div{display:grid;grid-template-columns:minmax(200px,.8fr) 1.6fr;gap:12px 48px;padding-block:32px;border-top:1px solid var(--line)}
+.phil.rows-3>div>h3{grid-row:1/span 3}
+@media (max-width:760px){.phil.rows-3>div{grid-template-columns:1fr}.phil.rows-3>div>h3{grid-row:auto}}
+.tr-rows{border-top:2px solid var(--ink)}
+.tr-row{display:grid;grid-template-columns:minmax(220px,.7fr) 1.6fr;gap:8px 40px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.tr-row h3{font-size:19px;font-weight:700}
+.tr-row p{color:var(--ink-2);line-height:1.7}
+.tr-row p i{font-style:normal;color:var(--ph-line);font-weight:400}
+.tr-row.custom{background:var(--green-soft);padding-inline:20px;border-bottom:0;margin-top:24px}
+.tr-row.custom>div{display:grid;gap:16px;justify-items:start}
+@media (max-width:700px){.tr-row{grid-template-columns:1fr}}
+.dash-list{list-style:none;margin:0;padding:0;columns:2;column-gap:28px}
+.dash-list li{break-inside:avoid;padding:7px 0 7px 18px;position:relative;color:var(--ink-2);line-height:1.35}
+.dash-list li::before{content:"";position:absolute;left:0;top:.95em;width:8px;height:2px;background:var(--ink)}
+@media (max-width:480px){.dash-list{columns:1}}
+.more-btn{all:unset;cursor:pointer;display:inline-flex;align-items:center;min-height:44px;padding:0 14px;font:700 15px var(--body);color:var(--ink);text-decoration:underline;text-decoration-color:var(--yellow);text-decoration-thickness:3px;text-underline-offset:4px}
+.more-btn:focus-visible{outline:3px solid var(--yellow)}
+/* touch targets */
+.menu-btn{min-height:44px}
+@media (max-width:860px){.svc-index button{min-height:44px;display:flex;align-items:center}.foot-top a{padding:10px 0}}
+.btn{transition:background .15s,color .15s}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+
+/* ===== Field-manual dark treatment ===== */
+body{font-weight:400}
+.h-xl{font-weight:700;letter-spacing:-.03em;line-height:1.02}
+.h-l{font-weight:700;letter-spacing:-.02em;line-height:1.08}
+.h-m{font-weight:600}
+.lead{font-weight:300}
+.eyebrow{font-family:var(--mono);font-weight:500;letter-spacing:.22em;color:var(--green)}
+.band .eyebrow,.dark .eyebrow{color:var(--green)}
+.crumb{font-family:var(--mono)}
+/* header: thin amber-ink hazard rule, mono wordmark tag */
+.top{background:rgba(21,18,13,.88);backdrop-filter:blur(10px)}
+.top::before{height:3px}
+.mark{background:var(--green);color:var(--green-ink);box-shadow:none;border-radius:2px;font-weight:700}
+.brand-name{font-weight:700;letter-spacing:-.01em}
+.brand-name small{font-family:var(--mono);color:var(--muted)}
+.nav a{font-weight:500}
+.nav a[aria-current="page"]{color:var(--green);box-shadow:inset 0 -2px 0 var(--green)}
+.menu-btn{border-color:var(--line)}
+/* buttons */
+.btn{border-radius:2px;font-weight:600;border:1px solid transparent}
+.btn-coral,.btn-green{background:var(--green);color:var(--green-ink)}
+.btn-coral:hover,.btn-green:hover{background:#FFC860}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:transparent}
+.btn-ghost:hover{background:var(--surface);border-color:var(--ink-2)}
+/* atmosphere: engineering grid + amber glow behind hero */
+.hero{position:relative;background:var(--bg);overflow:hidden}
+.hero::after{content:"";position:absolute;inset:-16% 0;z-index:0;pointer-events:none;
+  background:
+   radial-gradient(130% 95% at 88% -15%, rgba(255,180,46,.16), transparent 58%),
+   linear-gradient(var(--line) 1px, transparent 1px) 0 0/100% 36px,
+   linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0/36px 100%;
+  background-repeat:no-repeat,repeat,repeat;
+  transform:translate3d(0,calc(var(--sy,0) * .22px),0);will-change:transform;
+  -webkit-mask:linear-gradient(#000, rgba(0,0,0,.15) 82%, transparent);
+  mask:linear-gradient(#000, rgba(0,0,0,.15) 82%, transparent)}
+@media (prefers-reduced-motion:no-preference){
+  .hero::after{animation:gridDrift 26s linear infinite}
+  @keyframes gridDrift{from{background-position:0 0,0 0,0 0}to{background-position:0 0,0 -360px,-360px 0}}
+}
+.hero .wrap,.hero-strip{position:relative;z-index:1}
+.phero{position:relative;overflow:hidden}
+.phero::after{content:"";position:absolute;inset:-20% 0;z-index:0;pointer-events:none;
+  background:radial-gradient(90% 120% at 100% -20%, rgba(255,180,46,.12), transparent 55%);
+  transform:translate3d(0,calc(var(--sy,0) * .18px),0);will-change:transform}
+.phero .wrap{position:relative;z-index:1}
+/* hero headline: amber signal word, no highlighter fill */
+.hero h1 span{background:none!important;animation:none!important;color:var(--green);box-shadow:none;padding:0}
+/* "Our Goal" spec panel: framed, amber header, no swing */
+.hero-sign{animation:none;box-shadow:0 30px 60px -30px rgba(0,0,0,.7);border:1px solid var(--line);background:var(--surface)}
+.pin{display:none!important}
+.hero-sign .sign-head{background:var(--green);color:var(--green-ink);font-family:var(--mono);font-weight:600;letter-spacing:.08em}
+.sign-head svg path{stroke:var(--green-ink)!important}
+.sign-body li::before{background:var(--coral);animation:none;transform:none}
+.sign-body li{font-weight:600}
+.sign-body .kicker{font-family:var(--mono);color:var(--muted)}
+/* stat band + mono figures */
+.hero-strip{background:var(--forest);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.hero-strip .stat{border-color:var(--line)!important}
+.stat b{font-family:var(--display);font-weight:700;color:var(--green)}
+.stat span{color:var(--muted)}
+/* dark feature sections become bordered panels */
+.band,.dark{background:var(--bg-2);border-block:1px solid var(--line)}
+.band .h-l,.dark .h-l{color:var(--ink)}
+.dark .eyebrow{color:var(--green)}
+.dark .step::before,.band .step::before{color:var(--green);font-family:var(--mono)}
+.dark .steps,.dark .step,.band .steps{border-top-color:var(--green)}
+.dark .step p,.band .step p{color:var(--muted)}
+/* services list */
+.svc-tile::before,.svc-row::before{display:none!important}
+.svc-tile{background:var(--surface)}
+.svc-tile:hover{background:var(--green-soft)}
+.svc-group h3{font-family:var(--mono);color:var(--green);border-bottom-color:var(--line);letter-spacing:.14em}
+.svc-row{border-bottom-color:var(--line)}
+.svc-row span{font-weight:600}
+.svc-row:hover{background:var(--green-soft)}
+.svc-row::after,.svc-tile h3::after{color:var(--green)}
+.svc .tag{font-family:var(--mono);color:var(--green)}
+.svc h2,.svc .sub{font-weight:600}
+.svc{border-top-color:var(--line)}
+.svc-index button{border-left-color:var(--line)}
+.svc-index button:hover{border-left-color:var(--green);color:var(--ink)}
+.svc-index .lbl{font-family:var(--mono);color:var(--muted)}
+/* chips & technical small-caps codes */
+.chips span{background:var(--surface);border-color:var(--line);border-radius:2px}
+.chips span small{font-family:var(--mono);background:var(--green-soft);color:var(--green)}
+.note{background:var(--green-soft);color:var(--ink)}
+.progression div{background:var(--surface);border-color:var(--line)}
+.progression div:last-child{background:var(--green);color:var(--green-ink);border-color:var(--green)}
+.progression div:first-child{border-top:2px solid var(--coral)}
+.progression div small{font-family:var(--mono)}
+/* checklist marks */
+.checks li{color:var(--ink-2)}
+.why .row-item{border-top-color:var(--line)}
+.why .row-item h3{font-weight:600}
+/* pull quote */
+.pull blockquote{font-weight:600;color:var(--ink)}
+.pull blockquote::before{color:var(--green)}
+.text-link{color:var(--ink);text-decoration-color:var(--green)}
+.text-link:hover{text-decoration-color:var(--ink)}
+.more-btn{color:var(--ink);text-decoration-color:var(--green)}
+/* philosophy rows */
+.phil.rows-3>div{border-top-color:var(--line)}
+/* training */
+.tr-rows{border-top-color:var(--green)}
+.tr-row{border-bottom-color:var(--line)}
+.tr-row h3{font-weight:600}
+.tr-row p i{color:var(--line)}
+.tr-row.custom{background:var(--green-soft)}
+.lang{border-color:var(--green)}
+.lang span:first-child{background:var(--green);color:var(--green-ink)}
+/* founder */
+.creds div{background:var(--surface);border-color:var(--line);border-radius:2px}
+.creds div small{font-family:var(--mono);color:var(--green)}
+.figs{border-color:var(--line)}
+.figs b{font-family:var(--display);color:var(--green)}
+.dash-list li::before{background:var(--coral)}
+/* contact */
+.contact-card{background:var(--surface);border-color:var(--line);border-radius:2px}
+.contact-card .head{background:var(--green);color:var(--green-ink)}
+.contact-card .head p{color:var(--green-ink);opacity:.72}
+.contact-card .k{font-family:var(--mono);color:var(--muted)}
+.fill{color:var(--lav-text);border-color:var(--ph-line);font-family:var(--mono)}
+/* cta band */
+.cta-band{background:var(--forest);border-top:3px solid var(--green)}
+.cta-band::before{display:none}
+.cta-band h2{font-weight:700}
+.cta-band p{color:var(--muted)}
+.cta-band .btn{background:var(--green);color:var(--green-ink)}
+.cta-band .btn:hover{background:#FFC860}
+/* footer */
+footer{border-top:1px solid var(--line)}
+footer .foot-top h4{font-family:var(--mono)}
+footer .foot-tag{font-weight:700}
+footer .foot-tag span{color:var(--green)}
+.foot-base{font-family:var(--mono);font-size:12.5px}
+/* industries icons */
+.ind{border-top-color:var(--line)}
+.ind .ico{background:var(--green-soft);color:var(--green);border-radius:2px}
+.ind h3{font-weight:600}
+/* orchestrated page load */
+@media (prefers-reduced-motion:no-preference){
+ @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+ @keyframes glow{from{opacity:0}to{opacity:1}}
+ .hero::after{animation:glow 1.2s ease both}
+ .hero-copy>*{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+ .hero-copy>*:nth-child(1){animation-delay:.08s}
+ .hero-copy>*:nth-child(2){animation-delay:.18s}
+ .hero-copy>*:nth-child(3){animation-delay:.32s}
+ .hero-copy>*:nth-child(4){animation-delay:.46s}
+ .hero-sign{animation:rise .8s cubic-bezier(.2,.7,.2,1) .5s both}
+ .hero-strip .stat{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+ .hero-strip .stat:nth-child(1){animation-delay:.62s}
+ .hero-strip .stat:nth-child(2){animation-delay:.72s}
+ .hero-strip .stat:nth-child(3){animation-delay:.82s}
+ .hero-strip .stat:nth-child(4){animation-delay:.92s}
+}
+
+
+/* contact details */
+.contact-val{font-weight:600;color:var(--green);text-decoration:none;word-break:break-word}
+.contact-val:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+.contact-actions{display:flex;flex-wrap:wrap;gap:12px;padding:20px 22px;border-bottom:1px solid var(--line)}
+.contact-actions .btn{padding:12px 20px;font-size:15px}
+@media (max-width:480px){.contact-actions .btn{flex:1 1 auto;justify-content:center}}
+
+
+/* --- construction truck on the approach road --- */
+.road{position:relative;height:46px;margin:0;overflow:hidden;background:linear-gradient(var(--forest-deep),var(--forest-deep)) left bottom/100% 24px no-repeat}
+.road::before{content:"";position:absolute;left:0;right:0;bottom:11px;height:2px;
+  background:repeating-linear-gradient(90deg,var(--muted) 0 16px,transparent 16px 34px);opacity:.45}
+.road-stage{position:absolute;inset:0}
+.truck{position:absolute;bottom:3px;left:-80px;color:#FFB42E;filter:drop-shadow(0 3px 4px rgba(0,0,0,.45))}
+.truck svg{display:block}
+@media (prefers-reduced-motion:no-preference){
+  .truck{animation:drive 18s linear infinite}
+  .wheel{transform-box:fill-box;transform-origin:center;animation:roll 1.2s linear infinite}
+  .t-dust{transform-box:fill-box;transform-origin:left center;animation:dust 1.2s ease-in-out infinite}
+  .t-beacon{animation:beacon 1s steps(2) infinite}
+  @keyframes drive{0%{left:-80px}100%{left:100%}}
+  @keyframes roll{to{transform:rotate(360deg)}}
+  @keyframes roadrun{to{background-position:-30px 0}}
+  @keyframes dust{0%,100%{opacity:.25;transform:scale(.8)}50%{opacity:.6;transform:scale(1.1)}}
+  @keyframes beacon{0%{opacity:1}50%{opacity:.25}100%{opacity:1}}
+}
+.truck.paused,.truck.paused *{animation-play-state:paused!important}
+@media (max-width:560px){.road{height:40px;background-size:100% 20px}.road::before{bottom:9px}.truck svg{width:54px;height:29px}}
+
+
+/* services: datasheet rows instead of pills */
+.chips.spec{display:grid;grid-template-columns:1fr 1fr;gap:0 44px;border-top:1px solid var(--line);margin-top:4px}
+.chips.spec span{display:flex;align-items:baseline;justify-content:space-between;gap:14px;
+  padding:11px 4px 11px 22px;border:0;border-bottom:1px solid var(--line);border-radius:0;background:none;
+  position:relative;font-size:15.5px;line-height:1.3;color:var(--ink-2)}
+.chips.spec span::before{content:"";position:absolute;left:2px;top:1.05em;width:10px;height:2px;background:var(--green)}
+.chips.spec span em{font-style:normal}
+.chips.spec span small{font-family:var(--mono);font-size:11.5px;letter-spacing:.02em;color:var(--green);
+  background:none;padding:0;white-space:nowrap;flex:none}
+.chips.spec .more-btn{grid-column:1/-1;margin-top:14px}
+@media (max-width:620px){.chips.spec{grid-template-columns:1fr;gap:0}}
+
+
+/* closing quote mark + amber line that stays connected to the road at all widths */
+.pull blockquote::after{content:"”";color:var(--green)}
+.road{border-bottom:3px solid var(--green)}
+.road-stage{bottom:0;top:auto;height:46px}
+.steps{border-top:0}
+.dark .steps,.band .steps,.dark .step,.band .step{border-top-color:var(--line)}
+@media (max-width:1000px){.steps .step{border-top:1px solid var(--line)}}
+
+
+/* --- hero contour field (WebGL); sits under the content, above the hero background --- */
+.hero-field{position:absolute;inset:0;z-index:0;width:100%;height:100%;display:block;pointer-events:none;opacity:0;transition:opacity 1.6s ease}
+.hero.live .hero-field{opacity:1}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="S&amp;H Safety Solutions home">
+      <span class="mark">S&amp;H</span>
+      <span class="brand-name">S&amp;H Safety Solutions<small>Occupational Health &amp; Safety</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#training">Training</a>
+      <a href="#industries">Industries</a>
+      <a href="#founder">Our Founder</a>
+      <a href="#contact" class="cta-link">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ================= HOME ================= -->
+<div data-page="home" class="active">
+  <section class="hero" id="hero">
+    <canvas class="hero-field" id="heroField" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Occupational Health &amp; Safety Consulting</span>
+        <h1 class="h-xl">Protecting People. Reducing Risk. <span>Strengthening Safety Culture.</span></h1>
+        <p class="lead">Occupational health and safety consulting that helps organizations prevent injuries, meet OSHA requirements, and build safety into everyday operations.</p>
+        <div class="hero-actions">
+          <a class="btn btn-coral arrow" href="#contact">Schedule a consultation</a>
+          <a class="btn btn-ghost" href="#services">See every service</a>
+        </div>
+      </div>
+      <div class="hero-sign" aria-label="Our goal">
+        <span class="pin l" aria-hidden="true"></span><span class="pin r" aria-hidden="true"></span>
+        <div class="sign-head">Our Goal
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 5 7v8c0 7 4.6 12 11 14 6.4-2 11-7 11-14V7L16 3z" fill="none" stroke="#2C2C2E" stroke-width="2.4" stroke-linejoin="round"/><path d="m11 16 3.5 3.5L21 13" fill="none" stroke="#2C2C2E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="sign-body">
+          <p class="kicker">Our goal is simple:</p>
+          <ul>
+            <li>Improve Safety.</li>
+            <li>Ensure Compliance.</li>
+            <li>Build a Stronger Safety Culture.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hero-strip">
+      <div class="wrap">
+        <div class="stat"><b>25+</b><span>Years of safety leadership experience</span></div>
+        <div class="stat"><b>5,000+</b><span>Personnel trained during U.S. Army service</span></div>
+        <div class="stat"><b>50+</b><span>Worksites audited</span></div>
+        <div class="stat"><b>EN / ES</b><span>Training delivered in English or Spanish</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="roomy">
+    <div class="wrap split">
+      <div style="display:grid;gap:20px">
+        <h2 class="h-l">Every workplace is different. Your safety program should be too.</h2>
+      </div>
+      <div class="prose">
+        <p>The risks faced by a manufacturing facility are different from those faced by a warehouse, healthcare operation, construction project, hotel, janitorial company, or maritime operation.</p>
+        <p>We work with organizations to understand their operations, identify hazards, assess risk, develop practical controls, train employees, strengthen leadership accountability, and improve overall safety performance.</p>
+        <p>Effective safety programs must go beyond written policies. Safety must become part of everyday operations, leadership expectations, employee behavior, and organizational decision-making.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt roomy">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h-l">Find the service that fits the problem in front of you.</h2>
+      </div>
+      <div class="svc-groups" id="homeSvc"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split">
+      <div style="display:grid;gap:20px">
+        <h2 class="h-l">Compliance is the foundation of a safety program, not the final objective.</h2>
+        <p class="lead" style="font-size:18px">The systems we build are designed to:</p>
+      </div>
+      <ul class="checks">
+        <li>Prevent workplace injuries</li><li>Identify hazards before incidents occur</li>
+        <li>Improve OSHA compliance</li><li>Reduce operational risk</li>
+        <li>Strengthen leadership accountability</li><li>Improve employee participation</li>
+        <li>Develop effective safety policies</li><li>Improve emergency preparedness</li>
+        <li>Investigate incidents</li><li>Identify root causes</li>
+        <li>Track corrective actions</li><li>Improve safety performance</li>
+        <li>Build sustainable safety cultures</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="dark roomy">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">How an engagement runs</span>
+        <h2 class="h-l">Seven steps from first walkthrough to lasting improvement.</h2>
+      </div>
+      <div class="road" aria-hidden="true">
+        <div class="road-stage">
+          <div class="truck">
+            <svg viewBox="0 0 120 64" width="66" height="35" role="img" aria-label="construction truck">
+              <g class="t-dust"><circle cx="8" cy="52" r="3"/><circle cx="2" cy="47" r="2.2"/><circle cx="12" cy="44" r="1.8"/></g>
+              <rect x="20" y="30" width="46" height="18" rx="2" fill="#E8A42A"/>
+              <path d="M20 30 L20 20 Q20 18 22 18 L44 18 Q47 18 49 21 L55 30 Z" fill="#FFB42E"/>
+              <rect x="25" y="21" width="16" height="9" rx="1.5" fill="#1B140A" opacity=".82"/>
+              <rect x="66" y="22" width="40" height="26" rx="2.5" fill="#FFB42E"/>
+              <rect x="70" y="26" width="32" height="7" rx="1" fill="#8A5A12"/>
+              <path d="M66 48 h40" stroke="#8A5A12" stroke-width="2"/>
+              <circle class="wheel" cx="40" cy="50" r="9" fill="#17120A"/><circle cx="40" cy="50" r="3.4" fill="#E8A42A"/>
+              <circle class="wheel" cx="86" cy="50" r="9" fill="#17120A"/><circle cx="86" cy="50" r="3.4" fill="#E8A42A"/>
+              <rect x="106" y="34" width="4" height="8" rx="1" fill="#E8A42A"/>
+              <circle class="t-beacon" cx="33" cy="15" r="2.6" fill="#FF6A3C"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="steps" id="homeSteps"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="split" style="align-items:start">
+        <h2 class="h-l" style="position:sticky;top:120px">What working with S&amp;H looks like.</h2>
+        <div class="rows" id="why"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pull">
+    <div class="wrap">
+      <blockquote>Safety is more than compliance. It is a leadership responsibility, an operational discipline, and a commitment to protecting people.</blockquote>
+      <p class="pull-by"><span>Luis Sanchez, Founder &amp; President · 20+ years U.S. Army · M.S. Occupational Safety &amp; Health</span><a class="text-link" href="#founder">Read Luis’s background →</a></p>
+    </div>
+  </section>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<div data-page="about">
+  <section class="phero"><div class="wrap">
+    <span class="crumb"><a href="#home">Home</a> / About Us</span>
+    <h1 class="h-xl">Experience that goes beyond compliance.</h1>
+    <p class="lead">More than 25 years of safety leadership, compliance, training, and incident investigation experience.</p>
+  </div></section>
+
+  <section>
+    <div class="wrap split">
+      <div class="prose">
+        <p>S&amp;H Safety Solutions Inc. provides professional Occupational Health &amp; Safety consulting services supported by more than 25 years of experience.</p>
+        <p>Our professional experience includes leading multi-site environmental health and safety programs, conducting workplace audits, implementing injury-prevention initiatives, developing training programs, investigating workplace incidents, performing Root Cause Analyses, and working with leadership teams to strengthen safety performance.</p>
+        <p>Our approach combines practical field experience, regulatory knowledge, leadership, employee training, risk management, and continuous improvement.</p>
+      </div>
+      <div style="display:grid;gap:18px">
+        <h2 class="h-m">Our experience spans</h2>
+        <ul class="checks">
+          <li>Manufacturing</li><li>Construction</li><li>Warehousing &amp; Distribution</li><li>Healthcare</li><li>Maritime</li><li>Janitorial &amp; Environmental Services</li><li>Retail</li><li>Hospitality</li><li>Government Facilities</li><li>Commercial Operations</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap split">
+      <div style="display:grid;gap:20px">
+        <span class="eyebrow">Our Mission</span>
+        <h2 class="h-l">Help organizations build safety into the way they operate.</h2>
+        <p class="lead" style="font-size:18px">Our mission is to help organizations protect employees, reduce workplace risk, improve regulatory compliance, and develop sustainable Occupational Health &amp; Safety Management Systems.</p>
+      </div>
+      <div style="display:grid;gap:18px">
+        <h3 class="h-m">We accomplish this through</h3>
+        <ul class="checks">
+          <li>Hazard identification</li><li>Risk assessment</li><li>Employee education</li><li>Leadership engagement</li><li>Regulatory compliance</li><li>Safety audits</li><li>Incident investigation</li><li>Root Cause Analysis</li><li>Program development</li><li>Emergency preparedness</li><li>Corrective action</li><li>Continuous improvement</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Our Approach</span>
+        <h2 class="h-l">Identify. Assess. Control. Train. Implement. Measure. Improve.</h2>
+      </div>
+      <div class="road" aria-hidden="true">
+        <div class="road-stage">
+          <div class="truck">
+            <svg viewBox="0 0 120 64" width="66" height="35" role="img" aria-label="construction truck">
+              <g class="t-dust"><circle cx="8" cy="52" r="3"/><circle cx="2" cy="47" r="2.2"/><circle cx="12" cy="44" r="1.8"/></g>
+              <rect x="20" y="30" width="46" height="18" rx="2" fill="#E8A42A"/>
+              <path d="M20 30 L20 20 Q20 18 22 18 L44 18 Q47 18 49 21 L55 30 Z" fill="#FFB42E"/>
+              <rect x="25" y="21" width="16" height="9" rx="1.5" fill="#1B140A" opacity=".82"/>
+              <rect x="66" y="22" width="40" height="26" rx="2.5" fill="#FFB42E"/>
+              <rect x="70" y="26" width="32" height="7" rx="1" fill="#8A5A12"/>
+              <path d="M66 48 h40" stroke="#8A5A12" stroke-width="2"/>
+              <circle class="wheel" cx="40" cy="50" r="9" fill="#17120A"/><circle cx="40" cy="50" r="3.4" fill="#E8A42A"/>
+              <circle class="wheel" cx="86" cy="50" r="9" fill="#17120A"/><circle cx="86" cy="50" r="3.4" fill="#E8A42A"/>
+              <rect x="106" y="34" width="4" height="8" rx="1" fill="#E8A42A"/>
+              <circle class="t-beacon" cx="33" cy="15" r="2.6" fill="#FF6A3C"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="steps" id="aboutSteps"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h-l">Three beliefs behind every engagement.</h2>
+      </div>
+      <div class="phil rows-3">
+        <div>
+          <h3>Safety is a leadership responsibility</h3>
+          <p>Strong safety cultures begin with leadership. Managers and supervisors influence workplace safety through the expectations they establish, the hazards they correct, the behaviors they reinforce, and the accountability they maintain.</p>
+          <p>Safety cannot be delegated entirely to a safety department. Leaders must understand their role in protecting employees and managing risk.</p>
+        </div>
+        <div>
+          <h3>Safety must be proactive</h3>
+          <p>Organizations should not wait for an accident to discover a hazard. Our approach emphasizes:</p>
+          <div class="chips"><span>Hazard recognition</span><span>Risk assessment</span><span>Workplace inspections</span><span>Employee observations</span><span>Near-miss reporting</span><span>Corrective action</span><span>Training</span><span>Supervisor accountability</span><span>Incident prevention</span><span>Continuous improvement</span></div>
+        </div>
+        <div>
+          <h3>Employees are part of the solution</h3>
+          <p>Employees performing the work often have valuable knowledge about workplace hazards.</p>
+          <p>Effective safety programs encourage employees to identify hazards, communicate concerns, participate in safety discussions, and contribute to workplace improvements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ================= SERVICES ================= -->
+<div data-page="services">
+  <section class="phero"><div class="wrap">
+    <span class="crumb"><a href="#home">Home</a> / Services</span>
+    <h1 class="h-xl">Safety services, from OSHA compliance to incident investigation.</h1>
+    <p class="lead">Consulting, written programs, and on-site support for organizations of every size.</p>
+  </div></section>
+  <section>
+    <div class="wrap svc-layout">
+      <nav class="svc-index" id="svcIndex" aria-label="Services"></nav>
+      <div class="svc-list" id="svcList"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= TRAINING ================= -->
+<div data-page="training">
+  <section class="phero"><div class="wrap">
+    <span class="crumb"><a href="#home">Home</a> / Training</span>
+    <h1 class="h-xl">Employee &amp; Supervisor Safety Training</h1>
+    <p class="lead">Customized training for employees, supervisors, managers, and leadership teams.</p>
+    <div class="lang" aria-label="Languages"><span>English</span><span>Español</span></div>
+  </div></section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h-l">Courses we teach, from OSHA 10&#8209;Hour to supervisor leadership.</h2>
+      </div>
+      <div class="tr-rows" id="trGrid"></div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap split">
+      <div style="display:grid;gap:20px">
+        <h2 class="h-l">First Aid &amp; CPR: prepare employees to respond.</h2>
+        <p class="lead" style="font-size:18px">Your employees may be the first people on scene when a workplace emergency occurs.</p>
+        <p style="color:var(--muted)">Offered in English or Spanish, depending on course and client requirements.</p>
+      </div>
+      <ul class="checks">
+        <li>First Aid</li><li>CPR</li><li>AED Use</li><li>Bleeding Control</li><li>Medical Emergency Response</li><li>Workplace Injury Response</li><li>Emergency Communication</li><li>When to Activate Emergency Medical Services</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<!-- ================= INDUSTRIES ================= -->
+<div data-page="industries">
+  <section class="phero"><div class="wrap">
+    <span class="crumb"><a href="#home">Home</a> / Industries We Serve</span>
+    <h1 class="h-xl">Industries we serve.</h1>
+    <p class="lead">The hazards we know best in each working environment.</p>
+  </div></section>
+  <section>
+    <div class="wrap">
+      <div class="ind-grid" id="indGrid"></div>
+      <p style="margin-top:36px;color:var(--muted)">We also support <strong style="color:var(--ink)">government facilities</strong> and <strong style="color:var(--ink)">commercial operations</strong>.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ================= FOUNDER ================= -->
+<div data-page="founder">
+  <section class="phero"><div class="wrap">
+    <span class="crumb"><a href="#home">Home</a> / Meet Our Founder</span>
+    <h1 class="h-xl">Luis Sanchez</h1>
+    <p class="lead">Founder &amp; President, S&amp;H Safety Solutions Inc.</p>
+  </div></section>
+  <section>
+    <div class="wrap founder">
+      <aside>
+        <div class="creds">
+          <div><small>Education</small>M.S., Occupational Safety &amp; Health</div>
+          <div><small>Education</small>MPA, Public Administration</div>
+          <div><small>Education</small>B.S., Information &amp; Management</div>
+          <div><small>Credential</small>Certified Safety Professional</div>
+          <div><small>Credential</small>OSHA 501 General Industry Authorized Outreach Instructor</div>
+          <div><small>Credential</small>Graduate Safety Practitioner</div>
+          <div><small>Credential</small>First Aid / CPR Instructor</div>
+        </div>
+      </aside>
+      <div style="display:grid;gap:22px">
+        <div class="prose">
+          <p style="font-size:20px;color:var(--ink)">Luis Sanchez brings more than 25 years of experience in occupational health and safety, risk management, regulatory compliance, employee training, incident investigation, emergency preparedness, and organizational leadership.</p>
+          <p>His professional background includes leading multi-site Environmental Health &amp; Safety programs, conducting workplace audits, implementing injury-prevention initiatives, standardizing safety policies and procedures, leading incident investigations and Root Cause Analyses, and partnering with facility leadership to improve safety performance.</p>
+        </div>
+        <div class="figs">
+          <div><b>25+</b><span>Years in safety &amp; leadership</span></div>
+          <div><b>20+</b><span>Years of U.S. Army service</span></div>
+          <div><b>5,000+</b><span>Personnel trained</span></div>
+          <div><b>50+</b><span>Worksites audited</span></div>
+        </div>
+        <div class="prose">
+          <p>Luis has supported safety operations involving more than 1,000 employees, contractors, clients, and members of the public, and conducted safety audits across more than 50 worksites, including medical facilities, warehouses, government buildings, commercial properties, casinos, public spaces, and residential properties.</p>
+          <h2 class="h-m" style="color:var(--ink);margin-top:10px">U.S. Army service</h2>
+          <p>Before transitioning into senior private-sector safety leadership, Luis served for more than two decades in the United States Army as a senior instructor and safety leader. He trained more than 5,000 personnel and developed extensive experience in risk assessment, emergency preparedness, training, accountability, and operational safety.</p>
+          <p>He has also been published in <em>The Army Preventive Maintenance Magazine</em> for his expertise in safety and equipment maintenance.</p>
+          <h2 class="h-m" style="color:var(--ink);margin-top:10px">Areas of expertise</h2>
+        </div>
+        <div class="chips"><span>Safety Management Systems</span><span>Regulatory compliance</span><span>Occupational health</span><span>Industrial hygiene</span><span>Environmental assessments</span><span>Emergency response management</span><span>Incident investigation</span><span>Process improvement</span><span>Strategic planning</span><span>EHS program development</span></div>
+        <div class="prose">
+          <h2 class="h-m" style="color:var(--ink);margin-top:10px">Leadership philosophy</h2>
+          <p>Luis believes effective safety management must go beyond regulatory compliance. A strong safety program requires leadership commitment, supervisor accountability, employee participation, systematic risk management, effective training, and continuous improvement.</p>
+        </div>
+        <div class="pull" style="padding:28px 0 0;border-top:1px solid var(--line)">
+          <blockquote>Safety is more than compliance. It is a leadership responsibility, an operational discipline, and a commitment to protecting people.</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= CONTACT ================= -->
+<div data-page="contact">
+  <section class="phero"><div class="wrap">
+    <span class="crumb"><a href="#home">Home</a> / Contact Us</span>
+    <h1 class="h-xl">Let’s improve safety together.</h1>
+    <p class="lead">Tell us about a specific safety concern, or a complete safety management system you want to build.</p>
+  </div></section>
+  <section>
+    <div class="wrap split">
+      <div style="display:grid;gap:20px">
+        <h2 class="h-m">What we can help with</h2>
+        <ul class="dash-list"><li>Occupational Health &amp; Safety Consulting</li><li>OSHA Compliance</li><li>Workplace Safety Assessments</li><li>Risk Assessments</li><li>Employee Training</li><li>Supervisor Training</li><li>Safety Manuals</li><li>Standard Operating Procedures</li><li>Incident Investigations</li><li>Root Cause Analysis</li><li>Emergency Planning</li><li>Industrial Hygiene</li><li>Ergonomic Evaluations</li><li>ISO 45001 Support</li><li>OSHA Citation Support</li><li>Safety Culture Improvement</li><li>Ongoing Safety Management Support</li></ul>
+      </div>
+      <div class="contact-card">
+        <div class="head"><h3>S&amp;H Safety Solutions Inc.</h3><p>Protecting People. Reducing Risk. Strengthening Safety Culture.</p></div>
+        <div class="contact-actions"><a class="btn btn-green arrow" href="tel:+17542071325">Call (754) 207-1325</a><a class="btn btn-ghost" href="mailto:Lsanchez@shsafetysolutions.com">Email us</a></div>
+        <div class="row"><span class="k">Phone</span><a class="v contact-val" href="tel:+17542071325">(754)&nbsp;207-1325</a></div>
+        <div class="row"><span class="k">Email</span><a class="v contact-val" href="mailto:Lsanchez@shsafetysolutions.com">Lsanchez@shsafetysolutions.com</a></div>
+        <div class="row"><span class="k">Service area</span><span class="v">Fort Lauderdale, Florida</span></div>
+        <div class="row"><span class="k">Languages</span><span class="v">English · Español</span></div>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+
+<section class="cta-band" id="ctaBand">
+  <div class="wrap">
+    <div>
+      <h2>Improve Safety. Ensure Compliance. Build a Stronger Safety Culture.</h2>
+      <p>More than 25 years of experience. Practical safety solutions for today’s workplace.</p>
+    </div>
+    <a class="btn arrow" href="#contact">Schedule a consultation</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="brand" href="#home"><span class="mark">S&amp;H</span><span class="brand-name">S&amp;H Safety Solutions Inc.<small>Occupational Health &amp; Safety</small></span></a>
+        <p class="foot-tag">Protecting People. Reducing Risk. <span>Strengthening Safety Culture.</span></p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#about">About Us</a><a href="#founder">Our Founder</a><a href="#industries">Industries</a><a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="#services">OSHA Compliance</a><a href="#services">Risk Assessment</a><a href="#services">Safety Audits</a><a href="#training">Training &amp; First Aid/CPR</a><a href="#services">Incident Investigations</a>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© <span id="yr">2026</span> S&amp;H Safety Solutions Inc. All rights reserved.</span>
+      <span>Training available in English and Spanish</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const SERVICES = [
+ {id:"osha",group:"Compliance & Risk",name:"OSHA Compliance",short:"Identify compliance gaps and develop practical solutions.",
+  sub:"Understand the Requirements. Reduce Exposure. Improve Compliance.",
+  body:["OSHA requirements can be complex. S&H Safety Solutions Inc. assists organizations with identifying potential compliance gaps and developing practical solutions."],
+  lbl:"Services may include",
+  items:["OSHA compliance assessments","General Industry compliance","Construction safety compliance","OSHA recordkeeping guidance|29 CFR 1904","OSHA 300, 301 and 300A support","Hazard Communication|1910.1200","Personal Protective Equipment|1910.132","Lockout/Tagout|1910.147","Machine Guarding|1910.212","Walking-Working Surfaces","Bloodborne Pathogens|1910.1030","Respiratory Protection|1910.134","Hearing Conservation|1910.95","Forklift Safety|1910.178","Electrical Safety","Fall Protection","Emergency Action Plans|1910.38","Written program review","Compliance gap assessments"],
+  note:"Our objective is to help organizations identify and correct potential problems before they result in injuries, citations, or operational disruptions."},
+ {id:"risk",group:"Compliance & Risk",name:"Risk Assessment & Risk Management",short:"Systematic hazard identification and risk evaluation.",
+  sub:"Identify. Evaluate. Control.",
+  body:["Organizations cannot effectively manage risks they have not identified. S&H Safety Solutions Inc. assists organizations with systematic hazard identification and risk evaluation."],
+  lbl:"Services may include",
+  items:["Workplace Risk Assessments","Job Hazard Analysis","Job Safety Analysis","Task-Specific Risk Assessments","Hazard Identification","Risk Matrices","Risk Prioritization","Hierarchy of Controls Evaluation","Corrective Action Planning","Operational Risk Reviews","Management of Change Support"],
+  note:"Our objective is to help organizations prioritize the hazards presenting the greatest potential for injury, illness, property damage, or operational disruption."},
+ {id:"audits",group:"Compliance & Risk",name:"Safety Audits & Assessments",short:"Find hazards before they become injuries.",
+  sub:"Find Hazards Before They Become Injuries",
+  body:["Safety audits help organizations identify unsafe conditions, unsafe work practices, compliance concerns, and opportunities for improvement."],
+  lbl:"Assessments may include",
+  items:["Facility Safety Audits","Manufacturing Assessments","Warehouse Inspections","Construction-Site Inspections","OSHA Compliance Assessments","PPE Evaluations","Machine Guarding Reviews","Chemical Storage Reviews","Electrical Safety Observations","Forklift & Pedestrian Safety","Emergency Preparedness","Housekeeping","Equipment Safety","Corrective Action Reviews"],
+  note:"Clients can receive documented findings and recommended corrective actions."},
+ {id:"ih",group:"Compliance & Risk",name:"Industrial Hygiene",short:"Evaluate chemical, physical, and biological exposures.",
+  sub:"Identifying Workplace Exposure Hazards",
+  body:["Some workplace hazards cannot be easily seen. Employees may be exposed to chemical, physical, biological, or environmental hazards that require evaluation."],
+  lbl:"Areas of review may include",
+  items:["Chemical Exposure","Noise","Heat Stress","Dust","Indoor Air Quality","Respiratory Hazards","Workplace Ventilation","Hazardous Substances","Safety Data Sheets","Chemical Handling","Exposure Controls"],
+  note:"Where specialized testing, sampling, or laboratory analysis is required, qualified professionals may be coordinated as appropriate."},
+ {id:"ergo",group:"Compliance & Risk",name:"Ergonomic Evaluations",short:"Reduce strain and improve work design.",
+  sub:"Reduce Strain. Improve Work Design.",
+  body:["Ergonomic hazards can contribute to fatigue, discomfort, musculoskeletal injuries, and lost productivity."],
+  lbl:"Evaluations may address",
+  items:["Repetitive Motion","Awkward Postures","Forceful Exertion","Lifting","Material Handling","Reaching","Bending","Prolonged Standing","Computer Workstations","Repetitive Production Work","Workstation Design"],
+  note:"Recommendations may include work-practice changes, training, equipment modifications, administrative controls, or workstation improvements."},
+ {id:"ohsms",group:"Programs & Systems",name:"Safety Management Systems",short:"Build a system, not just a safety program.",
+  tag:"Occupational Health & Safety Management Systems",
+  sub:"Build a System, Not Just a Safety Program",
+  body:["A strong safety program requires more than inspections, training, and written policies. It requires a structured management system connecting leadership, employees, risk management, compliance, operational controls, training, incident prevention, corrective actions, performance measurement, and continuous improvement.","S&H Safety Solutions Inc. assists organizations with developing and strengthening Occupational Health & Safety Management Systems."],
+  lbl:"Services may include",
+  items:["Safety Management System Development","Safety Gap Assessments","Leadership Roles & Responsibilities","Employee Participation","Safety Committees","Inspection Programs","Incident Reporting Systems","Corrective Action Tracking","Contractor Safety Programs","Training Management","Performance Indicators","Management Reviews","Continuous Improvement Strategies"]},
+ {id:"iso",group:"Programs & Systems",name:"ISO 45001 Support",short:"Systems aligned with ISO 45001 principles.",
+  sub:"Strengthening Occupational Health & Safety Management",
+  body:["ISO 45001 provides organizations with a structured framework for managing occupational health and safety risk. S&H Safety Solutions Inc. can assist organizations seeking to develop or strengthen systems aligned with ISO 45001 principles."],
+  lbl:"Support may include",
+  items:["Gap Assessments","Hazard Identification","Risk & Opportunity Evaluation","Leadership Participation","Worker Consultation","Safety Objectives","Documentation Development","Operational Controls","Internal Audit Preparation","Corrective Actions","Management Review","Continual Improvement"],
+  note:"Organizations do not necessarily need to pursue formal certification to benefit from ISO 45001 management-system principles."},
+ {id:"manual",group:"Programs & Systems",name:"Safety Manual Development",short:"Customized written safety programs.",
+  sub:"Customized Safety Programs",
+  body:["Generic manuals often fail because they do not reflect the actual workplace. S&H Safety Solutions Inc. develops customized written safety programs based on the organization’s operations, workforce, hazards, and regulatory responsibilities."],
+  lbl:"Programs may include",
+  items:["Corporate Safety Manuals","Hazard Communication","Lockout/Tagout","Personal Protective Equipment","Emergency Action Plans","Fire Prevention","Bloodborne Pathogens","Respiratory Protection","Hearing Conservation","Forklift Safety","Electrical Safety","Fall Protection","Confined Space","Machine Guarding","Heat Illness Prevention","Contractor Safety","Driver Safety","Workplace Violence Prevention","Incident Reporting","Chemical Safety","Ergonomics","Housekeeping","Safety Committee Procedures"]},
+ {id:"sop",group:"Programs & Systems",name:"Standard Operating Procedures",short:"Clear procedures create consistent safety.",
+  sub:"Clear Procedures Create Consistent Safety",
+  body:["S&H Safety Solutions Inc. develops Standard Operating Procedures, Safe Work Practices, and Safety Protocols for workplace activities."],
+  lbl:"Procedures may address",
+  items:["Equipment Operation","Machine Safety","Lockout/Tagout","Chemical Handling","Forklift Operation","Maintenance Activities","Material Handling","Cleaning Operations","PPE Requirements","Hazardous Tasks","Emergency Procedures","Production Processes","Warehouse Operations"],
+  note:"Our objective is to convert safety requirements into clear and practical instructions employees can follow."},
+ {id:"emergency",group:"Programs & Systems",name:"Emergency Action & Evacuation Planning",short:"Prepare before an emergency happens.",
+  sub:"Prepare Before an Emergency Happens",
+  body:["Emergencies rarely provide time to develop a plan. S&H Safety Solutions Inc. assists organizations with developing practical emergency procedures tailored to their operations."],
+  lbl:"Services may include",
+  items:["Emergency Action Plans","Evacuation Procedures","Evacuation Routes","Assembly Areas","Employee Accountability","Fire Emergency Procedures","Severe Weather","Workplace Violence Response","Chemical Emergencies","Medical Emergencies","Emergency Rescue Planning","Emergency Communication","Supervisor Responsibilities","Emergency Drills","After-Action Evaluations"]},
+ {id:"incident",group:"Investigation & Oversight",name:"Incident & Near-Miss Investigations",short:"Find the root cause. Prevent recurrence.",
+  sub:"Find the Root Cause. Prevent Recurrence.",
+  body:["A good investigation should determine more than what happened. It should determine <strong>why it happened</strong>.","S&H Safety Solutions Inc. assists organizations with investigations involving workplace injuries, near misses, property damage, equipment incidents, vehicle incidents, chemical releases, safety-rule violations, and high-potential events."],
+  lbl:"Investigation services may include",
+  items:["Scene Evaluation","Employee Interviews","Witness Interviews","Document Review","Photographic Documentation","Timeline Development","Root Cause Analysis","Contributing-Factor Analysis","Corrective Action Recommendations","Follow-Up Reviews"],
+  note:"Our focus is identifying underlying causes and helping organizations prevent recurrence."},
+ {id:"citation",group:"Investigation & Oversight",name:"OSHA Citation & Inspection Support",short:"Navigate inspections, citations, and abatement.",
+  sub:"Navigate Regulatory Challenges",
+  body:["An OSHA inspection, investigation, or citation can create operational and financial concerns."],
+  lbl:"We can assist with",
+  items:["OSHA Inspection Preparation","Citation Review","Documentation Organization","Hazard Evaluation","Corrective Action Planning","Abatement Assistance","Informal Conference Preparation","Safety Program Review","Post-Inspection Improvement"],
+  note:"When legal representation or legal interpretation is required, we can work alongside qualified legal counsel while focusing on the occupational safety and technical aspects of the matter."},
+ {id:"competent",group:"Investigation & Oversight",name:"Competent Person Services",short:"Jobsite oversight and hazard recognition.",
+  sub:"Qualified Oversight for Hazardous Work",
+  body:["Certain workplace activities require oversight by individuals capable of identifying existing and predictable hazards and taking prompt corrective action.","S&H Safety Solutions Inc. can provide Competent Person support for applicable projects based on the specific work activity, regulatory requirements, and technical qualifications involved."],
+  lbl:"Services may include",
+  items:["Jobsite Safety Oversight","Hazard Recognition","Site Inspections","Contractor Safety Monitoring","Safety Meetings","Corrective Action","Documentation Review","Project-Specific Safety Support"]},
+ {id:"culture",group:"People & Culture",name:"Safety Culture Development",short:"Compliance is the minimum. Culture is the goal.",
+  sub:"Compliance Is the Minimum. Culture Is the Goal.",
+  body:["A strong safety culture cannot be created by the Safety Department alone. S&H Safety Solutions Inc. helps organizations strengthen these elements and integrate safety into everyday operational decision-making."],
+  lbl:"It requires",
+  items:["Leadership Commitment","Supervisor Accountability","Employee Participation","Open Communication","Hazard Reporting","Effective Training","Timely Corrective Action","Thorough Incident Investigation","Performance Measurement","Continuous Improvement"],
+  progression:true},
+ {id:"training",group:"People & Culture",name:"Training, First Aid & CPR",short:"Employee and supervisor training in English or Spanish.",link:"training"},
+ {id:"firstaid",group:"People & Culture",name:"First Aid & CPR Instruction",short:"Prepare employees to respond.",link:"training"}
+];
+
+const STEPS=[["Identify","Understand the organization, workforce, equipment, hazards, and regulatory requirements."],["Assess","Evaluate risks, compliance gaps, current procedures, and workplace practices."],["Control","Develop practical controls using the Hierarchy of Controls."],["Train","Give employees and leaders the knowledge to perform their responsibilities safely."],["Implement","Develop policies, procedures, programs, and management systems that integrate safety into everyday operations."],["Measure","Use inspections, investigations, corrective actions, observations, and performance indicators to evaluate results."],["Improve","Continuously strengthen the organization’s Occupational Health & Safety Management System."]];
+
+const WHY=[["More Than 25 Years of Experience","Practical experience in occupational health and safety, risk management, leadership, training, compliance, and incident prevention."],["Practical Solutions","Recommendations organizations can realistically implement and maintain."],["Customized Programs","Tailored to your actual hazards, operations, equipment, and workforce needs."],["Regulatory Knowledge","We translate workplace safety requirements into practical programs."],["Prevention Focus","Identifying and controlling hazards before injuries occur."],["Leadership Accountability","Helping supervisors and managers understand their responsibility for safety."],["Employee Engagement","Employees play an important role in identifying hazards and improving conditions."],["Continuous Improvement","Effective safety management requires ongoing evaluation and improvement."]];
+
+const TRAINING=[["OSHA & Regulatory Training",["OSHA 10-Hour","OSHA 30-Hour","General Industry Safety","Construction Safety","Hazard Recognition"]],["Forklift & Equipment Safety",["Forklift Operation","Powered Industrial Trucks","Pre-Use Inspections","Pedestrian Safety","Loading & Unloading","Equipment Hazard Recognition"]],["Personal Protective Equipment",["PPE Selection","PPE Use","PPE Inspection","PPE Limitations","PPE Hazard Assessments"]],["Hazard Communication",["OSHA Hazard Communication","Safety Data Sheets","Chemical Labels","Secondary Containers","Chemical Handling","Employee Right-to-Know"]],["Manufacturing & Warehouse Safety",["Machine Guarding","Lockout/Tagout","Electrical Safety","Material Handling","Warehouse Safety","Slips, Trips & Falls","Hand & Power Tools","Housekeeping"]],["Healthcare & Environmental Services",["Bloodborne Pathogens","Terminal Cleaning","Infection-Control Safety","Chemical Safety","Sharps Awareness","PPE","Exposure Prevention"]],["Supervisor & Leadership Training",["Supervisor Safety Responsibilities","Incident Response","Hazard Recognition","Accident Reporting","Employee Accountability","Emergency Response","Corrective Actions","Safety Leadership","Safety Culture"]],["Customized Training",null]];
+
+// Icons: Lucide (lucide.dev, ISC license)
+const I = {
+ factory:'<path d="M12 16h.01"/><path d="M16 16h.01"/><path d="M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z"/><path d="M8 16h.01"/>',
+ crane:'<path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5"/><path d="M14 6a6 6 0 0 1 6 6v3"/><path d="M4 15v-3a6 6 0 0 1 6-6"/><rect x="2" y="15" width="20" height="4" rx="1"/>',
+ box:'<path d="M18 21V10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v11"/><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 1.132-1.803l7.95-3.974a2 2 0 0 1 1.837 0l7.948 3.974A2 2 0 0 1 22 8z"/><path d="M6 13h12"/><path d="M6 17h12"/>',
+ cross:'<path d="M12 7v4"/><path d="M14 21v-3a2 2 0 0 0-4 0v3"/><path d="M14 9h-4"/><path d="M18 11h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h2"/><path d="M18 21V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16"/>',
+ anchor:'<path d="M12 2v2"/><path d="M12 9.189V13"/><path d="M19 12V6a2 2 0 00-2-2H7a2 2 0 00-2 2v6"/><path d="M19.38 19A11.6 11.6 0 0021 13l-8.188-3.639a2 2 0 00-1.624 0L3 13.001a11.6 11.6 0 002.81 7.76"/><path d="M2 20c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1c2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>',
+ spray:'<path d="M3 3h.01"/><path d="M7 5h.01"/><path d="M11 7h.01"/><path d="M3 7h.01"/><path d="M7 9h.01"/><path d="M3 11h.01"/><rect width="4" height="4" x="15" y="5"/><path d="m19 9 2 2v10c0 .6-.4 1-1 1h-6c-.6 0-1-.4-1-1V11l2-2"/><path d="m13 14 8-2"/><path d="m13 19 8-2"/>',
+ bag:'<path d="M16 10a4 4 0 0 1-8 0"/><path d="M3.103 6.034h17.794"/><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"/>',
+ bed:'<path d="M10 22v-6.57"/><path d="M12 11h.01"/><path d="M12 7h.01"/><path d="M14 15.43V22"/><path d="M15 16a5 5 0 0 0-6 0"/><path d="M16 11h.01"/><path d="M16 7h.01"/><path d="M8 11h.01"/><path d="M8 7h.01"/><rect x="4" y="2" width="16" height="20" rx="2"/>'
+};
+const IND=[["Manufacturing","factory","Machine guarding, Lockout/Tagout, ergonomics, PPE, chemical safety, production equipment, and employee training."],["Construction","crane","Fall protection, jobsite hazards, equipment safety, competent-person responsibilities, PPE, contractor oversight, and OSHA compliance."],["Warehousing & Distribution","box","Forklifts, pedestrian traffic, material handling, loading operations, racking, housekeeping, ergonomics, and logistics safety."],["Healthcare","cross","Bloodborne Pathogens, PPE, terminal cleaning, chemical exposure, emergency response, infection-control safety, and occupational health."],["Maritime","anchor","Operational risk, equipment hazards, emergency preparedness, workplace safety, and hazard recognition."],["Janitorial & Environmental Services","spray","Hazard Communication, chemical safety, Bloodborne Pathogens, terminal cleaning, slips and falls, PPE, equipment safety, and training."],["Retail","bag","Employee safety, ergonomics, slips and falls, material handling, emergency planning, and workplace violence awareness."],["Hospitality","bed","Hotels, housekeeping, kitchens, maintenance operations, chemical safety, ergonomics, employee training, and emergency preparedness."]];
+
+const esc = s => s.replace(/&/g,"&amp;");
+const $ = id => document.getElementById(id);
+
+// home services, grouped by need
+const GROUPS=[...new Set(SERVICES.map(s=>s.group))];
+$("homeSvc").innerHTML = GROUPS.map(g=>`<div class="svc-group"><h3>${esc(g)}</h3><ul>${SERVICES.filter(s=>s.group===g).map(s=>`<li><a class="svc-row" href="#${s.link||"services"}" data-svc="${s.link?"":s.id}"><span>${esc(s.name)}</span><small>${esc(s.short)}</small></a></li>`).join("")}</ul></div>`).join("");
+
+// steps
+const stepsHTML = STEPS.map(([h,p])=>`<div class="step"><h3>${h}</h3><p>${p}</p></div>`).join("");
+$("homeSteps").innerHTML = stepsHTML; $("aboutSteps").innerHTML = stepsHTML;
+
+$("why").innerHTML = WHY.map(([h,p])=>`<div class="row-item"><h3>${h}</h3><p>${p}</p></div>`).join("");
+
+// services page
+let lastGroup="", idx="";
+SERVICES.filter(s=>!s.link).forEach(s=>{
+  if(s.group!==lastGroup){idx+=`<div class="lbl">${esc(s.group)}</div>`;lastGroup=s.group;}
+  idx+=`<button type="button" data-go="${s.id}">${esc(s.name)}</button>`;
+});
+idx+=`<div class="lbl">People &amp; Training</div><button type="button" data-page-link="training">Training &amp; First Aid/CPR</button>`;
+$("svcIndex").innerHTML = idx;
+$("svcList").innerHTML = SERVICES.filter(s=>!s.link).map(s=>`
+  <article class="svc" id="svc-${s.id}">
+    <span class="tag">${esc(s.tag||s.group)}</span>
+    <h2>${esc(s.name)}</h2>
+    <p class="sub">${esc(s.sub)}</p>
+    <div class="body">${s.body.map(b=>`<p>${b.replace(/&(?!amp;)/g,"&amp;")}</p>`).join("")}</div>
+    <div class="list-lbl">${s.lbl}</div>
+    <div class="chips spec" data-more>${s.items.map((i,n)=>{const [t,c]=i.split("|");return `<span${n>=9?" hidden":""}><em>${esc(t)}</em>${c?`<small>${c}</small>`:""}</span>`}).join("")}${s.items.length>9?`<button type="button" class="more-btn" aria-expanded="false">Show all ${s.items.length}</button>`:""}</div>
+    ${s.progression?`<div class="list-lbl">We help organizations move from</div><div class="progression"><div><small>From</small>Reactive Safety</div><div><small>To</small>Proactive Risk Management</div><div><small>Ultimately</small>Safety as part of normal business operations</div></div>`:""}
+    ${s.note?`<p class="note">${esc(s.note)}</p>`:""}
+  </article>`).join("");
+
+// training
+$("trGrid").innerHTML = TRAINING.map(([h,l])=> l
+  ? `<div class="tr-row"><h3>${esc(h)}</h3><p>${l.map(esc).join('<i aria-hidden="true"> / </i>')}</p></div>`
+  : `<div class="tr-row custom"><h3>${esc(h)}</h3><div><p>Built around your specific hazards, equipment, policies, or operational needs.</p><a class="btn btn-green arrow" href="#contact">Request custom training</a></div></div>`).join("");
+
+// industries
+$("indGrid").innerHTML = IND.map(([h,ic,p])=>`<div class="ind"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${I[ic]}</svg></div><div><h3>${esc(h)}</h3><p>${p}</p></div></div>`).join("");
+
+// router
+const PAGES=["home","about","services","training","industries","founder","contact"];
+let pendingSvc=null;
+function show(){
+  let p=(location.hash||"#home").slice(1);
+  if(!PAGES.includes(p)) p="home";
+  document.querySelectorAll("[data-page]").forEach(el=>el.classList.toggle("active",el.dataset.page===p));
+  document.querySelectorAll(".nav a").forEach(a=>a.setAttribute("aria-current",a.getAttribute("href")==="#"+p?"page":"false"));
+  $("ctaBand").hidden = (p==="contact");
+  const title={home:"",about:"About",services:"Services",training:"Training",industries:"Industries",founder:"Our Founder",contact:"Contact"}[p];
+  document.title = title?`${title} · S&H Safety Solutions`:"S&H Safety Solutions";
+  if(pendingSvc && p==="services"){const t=$("svc-"+pendingSvc);pendingSvc=null;if(t){t.scrollIntoView();return;}}
+  window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",show);
+document.addEventListener("click",e=>{
+  const tile=e.target.closest("[data-svc]");
+  if(tile&&tile.dataset.svc){pendingSvc=tile.dataset.svc; if(location.hash==="#services"){e.preventDefault();show();}}
+  const go=e.target.closest("[data-go]");
+  if(go){const t=$("svc-"+go.dataset.go); if(t) t.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});}
+  const mb=e.target.closest(".more-btn");
+  if(mb){const box=mb.parentElement;const open=mb.getAttribute("aria-expanded")==="true";box.querySelectorAll("span").forEach((c,n)=>{if(n>=9)c.hidden=open;});mb.setAttribute("aria-expanded",String(!open));mb.textContent=open?`Show all ${box.querySelectorAll("span").length}`:"Show fewer";}
+  const pl=e.target.closest("[data-page-link]");
+  if(pl){location.hash=pl.dataset.pageLink;}
+  if(e.target.closest(".nav a")){$("nav").classList.remove("open");$("menuBtn").setAttribute("aria-expanded","false");}
+});
+$("menuBtn").addEventListener("click",()=>{const o=$("nav").classList.toggle("open");$("menuBtn").setAttribute("aria-expanded",o);});
+$("yr").textContent=new Date().getFullYear();
+
+(function(){
+  // subtle hero parallax (backdrops only; roads are not affected)
+  var reduceMM=matchMedia('(prefers-reduced-motion: reduce)');
+  if(!reduceMM.matches){
+    var root=document.documentElement,ticking=false;
+    function upd(){root.style.setProperty('--sy',String(window.scrollY||window.pageYOffset||0));ticking=false;}
+    addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(upd);}},{passive:true});
+    upd();
+  }
+  // pause each truck when its section is off-screen (saves battery)
+  var trucks=document.querySelectorAll('.truck');
+  if(trucks.length&&'IntersectionObserver'in window){
+    trucks.forEach(function(tk){
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){tk.classList.toggle('paused',!e.isIntersecting);});},{threshold:0});
+      io.observe(tk.closest('section'));
+    });
+  }
+})();
+
+/* ---------- hero field: slow amber contour lines (raw WebGL, ~3 KB) ----------
+   Falls back to the static CSS grid when WebGL is missing or motion is reduced.
+   Renders at most ~30 fps, and only while the hero is on screen and the tab is visible. */
+function setupHeroField(){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const hero=document.getElementById("hero"), cv=document.getElementById("heroField");
+  const gl=cv.getContext("webgl",{alpha:true,antialias:false,premultipliedAlpha:true,powerPreference:"low-power"});
+  if(!gl || !gl.getExtension("OES_standard_derivatives")) return;
+  const vs=`attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}`;
+  const fs=`#extension GL_OES_standard_derivatives:enable
+precision mediump float;uniform vec2 r;uniform float t;
+float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);
+ return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+vec2(1,1)),f.x),f.y);}
+float fbm(vec2 p){float v=0.,a=.5;for(int k=0;k<4;k++){v+=a*n(p);p=p*2.03+vec2(1.7,9.2);a*=.5;}return v;}
+void main(){
+ vec2 q=gl_FragCoord.xy/r;vec2 uv=gl_FragCoord.xy/max(r.y,1.);
+ float v=fbm(uv*1.35+vec2(t*.010,-t*.007));
+ float c=v*16.;float d=abs(fract(c+.5)-.5)/fwidth(c);
+ float line=1.-smoothstep(.0,1.1,d);
+ float major=step(.5,1.-abs(fract(c/5.+.1)-.5)*10.);
+ float a=line*mix(.10,.30,major);
+ a*=mix(.25,1.,smoothstep(.15,.85,q.x));
+ a*=smoothstep(.0,.35,q.y);
+ gl_FragColor=vec4(vec3(1.,.706,.18)*a,a);}`;
+  const sh=(type,src)=>{const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);return gl.getShaderParameter(s,gl.COMPILE_STATUS)?s:null;};
+  const v=sh(gl.VERTEX_SHADER,vs), f=sh(gl.FRAGMENT_SHADER,fs);
+  if(!v||!f) return;
+  const pr=gl.createProgram();gl.attachShader(pr,v);gl.attachShader(pr,f);gl.linkProgram(pr);
+  if(!gl.getProgramParameter(pr,gl.LINK_STATUS)) return;
+  gl.useProgram(pr);
+  gl.bindBuffer(gl.ARRAY_BUFFER,gl.createBuffer());
+  gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+  const loc=gl.getAttribLocation(pr,"p");gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
+  const uR=gl.getUniformLocation(pr,"r"), uT=gl.getUniformLocation(pr,"t");
+  const size=()=>{const dpr=Math.min(devicePixelRatio||1,1.5);cv.width=Math.round(cv.clientWidth*dpr);cv.height=Math.round(cv.clientHeight*dpr);gl.viewport(0,0,cv.width,cv.height);gl.uniform2f(uR,cv.width,cv.height);};
+  new ResizeObserver(size).observe(cv); size();
+  let visible=false, raf=0, last=0, t=40;
+  const frame=now=>{
+    raf=0; if(!visible||document.hidden) return;
+    if(now-last>=33){ t+=Math.min(now-last,100)/1000; last=now; gl.uniform1f(uT,t); gl.drawArrays(gl.TRIANGLES,0,3); }
+    raf=requestAnimationFrame(frame);
+  };
+  const run=()=>{ if(visible&&!document.hidden&&!raf){last=performance.now();raf=requestAnimationFrame(frame);} };
+  new IntersectionObserver(es=>{visible=es[0].isIntersecting;run();}).observe(hero);
+  document.addEventListener("visibilitychange",run);
+  cv.addEventListener("webglcontextlost",e=>{e.preventDefault();hero.classList.remove("live");visible=false;});
+  gl.uniform1f(uT,t); gl.drawArrays(gl.TRIANGLES,0,3);
+  hero.classList.add("live");
+}
+setupHeroField();
+
+show();
+</script>
+
+</body></html>
